@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+.idea/
+examples/video_example.mp4
+/env
