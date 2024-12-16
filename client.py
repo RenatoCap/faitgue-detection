@@ -7,9 +7,9 @@ import numpy as np
 
 
 async def send_video():
-    uri = "ws://localhost:8000/ws"
+    uri = "ws://34.16.102.9:8000/ws"
     async with websockets.connect(uri) as websocket:
-        cap = cv2.VideoCapture(0)
+        cap = cv2.VideoCapture(1)
         while cap.isOpened():
             ret, frame = cap.read()
             if not ret:
